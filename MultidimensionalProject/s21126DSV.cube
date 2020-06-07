@@ -1,0 +1,492 @@
+﻿<Cube xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ddl2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:ddl2_2="http://schemas.microsoft.com/analysisservices/2003/engine/2/2" xmlns:ddl100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:ddl200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:ddl200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:ddl300="http://schemas.microsoft.com/analysisservices/2011/engine/300" xmlns:ddl300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:ddl400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:ddl400_400="http://schemas.microsoft.com/analysisservices/2012/engine/400/400" xmlns:ddl500="http://schemas.microsoft.com/analysisservices/2013/engine/500" xmlns:ddl500_500="http://schemas.microsoft.com/analysisservices/2013/engine/500/500" xmlns:dwd="http://schemas.microsoft.com/DataWarehouse/Designer/1.0" dwd:design-time-name="e26ac361-1eab-4160-9bee-7c7456cae387" xmlns="http://schemas.microsoft.com/analysisservices/2003/engine">
+  <ID>s21126DSV</ID>
+  <Name>s21126DSV</Name>
+  <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+  <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+  <Annotations>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramLayout</Name>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:ShowFriendlyNames</Name>
+      <Value>true</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:ShowRelationshipNames</Name>
+      <Value>false</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:UseDiagramDefaultLayout</Name>
+      <Value>true</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramViewPortLeft</Name>
+      <Value>0</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramViewPortTop</Name>
+      <Value>0</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramBoundingLeft</Name>
+      <Value>0</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramBoundingTop</Name>
+      <Value>0</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramZoom</Name>
+      <Value>100</Value>
+    </Annotation>
+  </Annotations>
+  <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
+  <State>Unprocessed</State>
+  <Dimensions>
+    <Dimension dwd:design-time-name="34ec15d4-2b12-40a1-a186-f7cdbca929d9">
+      <ID>Incident</ID>
+      <Name>Incident</Name>
+      <DimensionID>Incident</DimensionID>
+      <Attributes>
+        <Attribute dwd:design-time-name="7e8a3617-fbfd-48c3-8f87-88261013b0d5">
+          <AttributeID>Id</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="1e5a74eb-3fc8-4360-a638-c178fb447dd9">
+          <AttributeID>Alarm Systems Id</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="e412f8c1-9adc-40ce-9529-4f5c92d4b7af">
+          <AttributeID>Fire Under Control Time Id</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="6cd7d566-674d-4240-8aa6-8c20f72e9794">
+          <AttributeID>Ignition Source Id</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="81fddfd8-5634-441a-beb1-8a1d8c5439b9">
+          <AttributeID>Location Id</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="e73af42a-ab92-4a9e-b4d4-07aee5fac75d">
+          <AttributeID>Final Incident Type Id</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="f5e3727d-8062-41b3-8016-2ca07ee6fb1f">
+          <AttributeID>Initial CAD Event Type Id</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="c66d23eb-e7bb-46b9-8c24-24b5a83e0338">
+          <AttributeID>Building Status Id</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="58176740-d129-4fb2-8b0c-a7abb77f5afc">
+          <AttributeID>Extent Of Fire Id</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="329c7e2d-10a5-4b01-9066-a4846d323c6b">
+          <AttributeID>Area Of Origin Id</AttributeID>
+        </Attribute>
+      </Attributes>
+    </Dimension>
+    <Dimension dwd:design-time-name="614721e9-36c8-454b-818e-c4d270b2a356">
+      <ID>Alarm Systems</ID>
+      <Name>Alarm Systems</Name>
+      <DimensionID>Alarm Systems</DimensionID>
+      <Attributes>
+        <Attribute dwd:design-time-name="378f9638-c7e7-4cd8-886f-9d411d5f9d2b">
+          <AttributeID>Id</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="d0538670-fe7b-4a65-aab3-7488c9bf7860">
+          <AttributeID>Fire Alarm System Presence</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="41ddf8e0-aabf-4d01-9b22-dae5f3ef41f4">
+          <AttributeID>Sprinkle System Presence</AttributeID>
+        </Attribute>
+      </Attributes>
+      <Hierarchies>
+        <Hierarchy dwd:design-time-name="1e7ce856-8a8d-4eb5-bc2d-7855b854175c">
+          <HierarchyID>Hierarchy</HierarchyID>
+        </Hierarchy>
+        <Hierarchy dwd:design-time-name="9fd8d50c-7452-4e91-9206-c9c5d6108de9">
+          <HierarchyID>Hierarchy 1</HierarchyID>
+        </Hierarchy>
+      </Hierarchies>
+    </Dimension>
+    <Dimension dwd:design-time-name="cff36f23-cea8-4838-9f0e-04c68a5bf37b">
+      <ID>Fire Under Control Time</ID>
+      <Name>Fire Under Control Time</Name>
+      <DimensionID>Fire Under Control Time</DimensionID>
+      <Attributes>
+        <Attribute dwd:design-time-name="1910bc13-a500-4ed7-b35b-5d0571d10e08">
+          <AttributeID>Id</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="76044770-46be-4801-8089-8e665dd7f189">
+          <AttributeID>Year F</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="d3100ee8-cb24-40ea-96c7-d78d42a77a25">
+          <AttributeID>Month F</AttributeID>
+        </Attribute>
+      </Attributes>
+      <Hierarchies>
+        <Hierarchy dwd:design-time-name="542dfc9e-0659-4b0c-a27c-0bdd19952764">
+          <HierarchyID>Hierarchy</HierarchyID>
+        </Hierarchy>
+      </Hierarchies>
+    </Dimension>
+    <Dimension dwd:design-time-name="2ece5c32-5d94-488c-81c2-2830f671a49a">
+      <ID>Ignition Source</ID>
+      <Name>Ignition Source</Name>
+      <DimensionID>Ignition Source</DimensionID>
+      <Attributes>
+        <Attribute dwd:design-time-name="ba068727-30f4-4947-b53a-1c8762f60dc7">
+          <AttributeID>Id</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="2766aa8b-9503-4e1d-9d7c-a37a5f476e8a">
+          <AttributeID>Ignition Source Type</AttributeID>
+        </Attribute>
+      </Attributes>
+      <Hierarchies>
+        <Hierarchy dwd:design-time-name="39d5d20a-cb55-4b22-84cd-90337a188913">
+          <HierarchyID>Hierarchy</HierarchyID>
+        </Hierarchy>
+      </Hierarchies>
+    </Dimension>
+    <Dimension dwd:design-time-name="5e4fbe90-7b09-4ae5-bb19-37de013a4a75">
+      <ID>Location</ID>
+      <Name>Location</Name>
+      <DimensionID>Location</DimensionID>
+      <Attributes>
+        <Attribute dwd:design-time-name="5c67b5c2-2d80-4e25-8001-35f52239c1cf">
+          <AttributeID>Id</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="e2141a47-602e-4f05-b07a-68ca7da70e1d">
+          <AttributeID>Intersection Name</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="aa6c8c4d-701f-4e9e-b1b5-458dc3af83c6">
+          <AttributeID>Station Area</AttributeID>
+        </Attribute>
+      </Attributes>
+      <Hierarchies>
+        <Hierarchy dwd:design-time-name="d982cb5e-684c-427c-8b07-8243fdfc44d0">
+          <HierarchyID>Hierarchy</HierarchyID>
+        </Hierarchy>
+      </Hierarchies>
+    </Dimension>
+    <Dimension dwd:design-time-name="84c2c5f9-0b94-4c50-a878-9eb2ef7283a6">
+      <ID>Final Incident Type</ID>
+      <Name>Final Incident Type</Name>
+      <DimensionID>Final Incident Type</DimensionID>
+      <Attributes>
+        <Attribute dwd:design-time-name="aa2dc73e-525c-44b5-8da1-6cb05e944b2a">
+          <AttributeID>Id</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="444b3e4a-22c4-4e2a-9bc7-a841600ac886">
+          <AttributeID>Type</AttributeID>
+        </Attribute>
+      </Attributes>
+      <Hierarchies>
+        <Hierarchy dwd:design-time-name="6d378ee3-ee4c-441d-8b04-e19b51826089">
+          <HierarchyID>Hierarchy</HierarchyID>
+        </Hierarchy>
+      </Hierarchies>
+    </Dimension>
+    <Dimension dwd:design-time-name="4624204c-9e0b-4f32-aed3-8bee69611726">
+      <ID>Initial CAD Event Type</ID>
+      <Name>Initial CAD Event Type</Name>
+      <DimensionID>Initial CAD Event Type</DimensionID>
+      <Attributes>
+        <Attribute dwd:design-time-name="111c1991-1d23-4966-8f4e-1574b140bc71">
+          <AttributeID>Id</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="65a66646-fe45-4c88-b5dd-e15aa6df7eb4">
+          <AttributeID>Type</AttributeID>
+        </Attribute>
+      </Attributes>
+      <Hierarchies>
+        <Hierarchy dwd:design-time-name="00f5b3b1-d247-4f01-b805-2ed6dcb36b4b">
+          <HierarchyID>Hierarchy</HierarchyID>
+        </Hierarchy>
+      </Hierarchies>
+    </Dimension>
+    <Dimension dwd:design-time-name="9a1dff5a-0f22-404c-99f8-fe7af4d9e8c7">
+      <ID>Building Status</ID>
+      <Name>Building Status</Name>
+      <DimensionID>Building Status</DimensionID>
+      <Attributes>
+        <Attribute dwd:design-time-name="a38af639-93fc-4ad0-9d87-43a3b8598dcd">
+          <AttributeID>Id</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="9ccac8c0-721a-4f2b-9670-fc7bdbe39bee">
+          <AttributeID>Building Status Type</AttributeID>
+        </Attribute>
+      </Attributes>
+      <Hierarchies>
+        <Hierarchy dwd:design-time-name="9667d050-fc61-44b0-bcfe-568964066966">
+          <HierarchyID>Hierarchy</HierarchyID>
+        </Hierarchy>
+      </Hierarchies>
+    </Dimension>
+    <Dimension dwd:design-time-name="c8a4e06e-0b6f-4cee-b048-731998954566">
+      <ID>Extent Of Fire</ID>
+      <Name>Extent Of Fire</Name>
+      <DimensionID>Extent Of Fire</DimensionID>
+      <Attributes>
+        <Attribute dwd:design-time-name="b3dc37f9-be3f-49c4-b7ff-4133d0bd6332">
+          <AttributeID>Id</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="27882c6b-57f8-4069-acc9-329fb1225e80">
+          <AttributeID>Extent</AttributeID>
+        </Attribute>
+      </Attributes>
+      <Hierarchies>
+        <Hierarchy dwd:design-time-name="fba87550-f53f-48f6-ac98-bdadbb58e82d">
+          <HierarchyID>Hierarchy</HierarchyID>
+        </Hierarchy>
+      </Hierarchies>
+    </Dimension>
+    <Dimension dwd:design-time-name="62577cfb-59c6-4f92-9ae9-284f0cf52b93">
+      <ID>Area Of Origin</ID>
+      <Name>Area Of Origin</Name>
+      <DimensionID>Area Of Origin</DimensionID>
+      <Attributes>
+        <Attribute dwd:design-time-name="ec532d92-ad07-4713-82b4-50714f7a65f7">
+          <AttributeID>Id</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="19689be6-fe09-4e65-ade7-eaf9a443e595">
+          <AttributeID>Area of Origin Type</AttributeID>
+        </Attribute>
+      </Attributes>
+      <Hierarchies>
+        <Hierarchy dwd:design-time-name="6f0a3432-73fa-4d3a-b884-80e1541fdb6f">
+          <HierarchyID>Hierarchy</HierarchyID>
+        </Hierarchy>
+      </Hierarchies>
+    </Dimension>
+  </Dimensions>
+  <MeasureGroups>
+    <MeasureGroup dwd:design-time-name="d084c7a6-3439-43d7-acf4-b701dad704fe">
+      <ID>Incident</ID>
+      <Name>Incident</Name>
+      <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+      <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+      <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
+      <State>Unprocessed</State>
+      <Measures>
+        <Measure dwd:design-time-name="7f7e86e6-0302-408a-80aa-fb31e4650982">
+          <ID>Civillian Casualties</ID>
+          <Name>Civillian Casualties</Name>
+          <Source dwd:design-time-name="1d3a4afe-9c0f-4af6-b035-50ceefea1aa8">
+            <DataType>Integer</DataType>
+            <Source xsi:type="ColumnBinding" dwd:design-time-name="fad6be1e-312d-4798-8ef4-0ccca9dcc822">
+              <TableID>dbo_Incident</TableID>
+              <ColumnID>civillian_casualties</ColumnID>
+            </Source>
+          </Source>
+        </Measure>
+        <Measure dwd:design-time-name="974a56ba-924c-4b50-8dfe-b6accf5f6abe">
+          <ID>Estimated Dollar Loss</ID>
+          <Name>Estimated Dollar Loss</Name>
+          <Source dwd:design-time-name="3c19139f-beaf-40df-b306-07b32ca772c7">
+            <DataType>Integer</DataType>
+            <Source xsi:type="ColumnBinding" dwd:design-time-name="c86cf09c-6788-4a82-ab62-3775bb99cb0a">
+              <TableID>dbo_Incident</TableID>
+              <ColumnID>estimated_dollar_loss</ColumnID>
+            </Source>
+          </Source>
+        </Measure>
+        <Measure dwd:design-time-name="019f0b0c-1194-4617-b0a0-287660e3b6b1">
+          <ID>Incident Count</ID>
+          <Name>Incident Count</Name>
+          <AggregateFunction>Count</AggregateFunction>
+          <Source dwd:design-time-name="b6dea4a6-ab00-4aff-828b-6364d6d927b0">
+            <DataType>Integer</DataType>
+            <DataSize>4</DataSize>
+            <Source xsi:type="RowBinding" dwd:design-time-name="07c352a9-4625-4bac-aa20-3c32ace2122c">
+              <TableID>dbo_Incident</TableID>
+            </Source>
+          </Source>
+        </Measure>
+      </Measures>
+      <StorageMode>Molap</StorageMode>
+      <ProcessingMode>Regular</ProcessingMode>
+      <Dimensions>
+        <Dimension xsi:type="DegenerateMeasureGroupDimension" dwd:design-time-name="7d682c50-b40b-4ee5-be7a-8f7e78220e8e">
+          <CubeDimensionID>Incident</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="b12976f1-1c80-4e28-a778-ea1cfdf313f2">
+              <AttributeID>Id</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="b0f7e35d-4f66-40a3-b7e7-1eb7fb2a597d">
+                  <DataType>Integer</DataType>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="9627ff4b-12e7-492f-933d-31e414d53440">
+                    <TableID>dbo_Incident</TableID>
+                    <ColumnID>id</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+              <Type>Granularity</Type>
+            </Attribute>
+          </Attributes>
+        </Dimension>
+        <Dimension xsi:type="RegularMeasureGroupDimension" dwd:design-time-name="6f50fb8c-5901-4d57-bee3-ff645b6a3620">
+          <CubeDimensionID>Alarm Systems</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="29ff69c8-1dde-4317-a00a-d31ac4e267ff">
+              <AttributeID>Id</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="289cbaa9-de59-4f74-b11b-6447a7f5782f">
+                  <DataType>Integer</DataType>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="cbde84d4-207e-43fe-a960-55211c06f203">
+                    <TableID>dbo_Incident</TableID>
+                    <ColumnID>AlarmSystems_id</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+              <Type>Granularity</Type>
+            </Attribute>
+          </Attributes>
+        </Dimension>
+        <Dimension xsi:type="RegularMeasureGroupDimension" dwd:design-time-name="1ab4af6a-fbcf-4f77-b50f-d3eb093eda0c">
+          <CubeDimensionID>Fire Under Control Time</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="93af6230-955e-444d-8f05-19e073c19962">
+              <AttributeID>Id</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="4c1192e9-ce11-47b7-acf7-4ca0d2e62bc6">
+                  <DataType>Integer</DataType>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="14d22e03-13da-4a28-80ed-adb7faaf4e5f">
+                    <TableID>dbo_Incident</TableID>
+                    <ColumnID>FireUnderControlTime_id</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+              <Type>Granularity</Type>
+            </Attribute>
+          </Attributes>
+        </Dimension>
+        <Dimension xsi:type="RegularMeasureGroupDimension" dwd:design-time-name="07565ae4-c35e-4ad1-b64e-01e8454d1ccf">
+          <CubeDimensionID>Ignition Source</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="03905653-8558-4f71-b279-f639517b8805">
+              <AttributeID>Id</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="7e2fdbe3-33aa-4827-a0fd-6947061f8ffb">
+                  <DataType>Integer</DataType>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="ac1beab7-fb2f-4829-92d4-950994556ec2">
+                    <TableID>dbo_Incident</TableID>
+                    <ColumnID>IgnitionSource_id</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+              <Type>Granularity</Type>
+            </Attribute>
+          </Attributes>
+        </Dimension>
+        <Dimension xsi:type="RegularMeasureGroupDimension" dwd:design-time-name="b23fa190-ec4b-4681-92fe-bec28b1c6e07">
+          <CubeDimensionID>Location</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="9b689f3d-0527-4bea-afbf-a791bcc4d8d5">
+              <AttributeID>Id</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="938b7934-dfd0-4d5c-a6b1-d5b44861be62">
+                  <DataType>Integer</DataType>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="e0e542f3-27e7-4ae5-b871-f64cc79f4367">
+                    <TableID>dbo_Incident</TableID>
+                    <ColumnID>Location_id</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+              <Type>Granularity</Type>
+            </Attribute>
+          </Attributes>
+        </Dimension>
+        <Dimension xsi:type="RegularMeasureGroupDimension" dwd:design-time-name="7fdced6d-d10d-4ee0-b2a3-6b06545b1237">
+          <CubeDimensionID>Final Incident Type</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="ac3d3647-a4c7-4efd-9808-35f66a44ab53">
+              <AttributeID>Id</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="341ec84a-3bdf-4088-9a93-5ca3e8d03bfb">
+                  <DataType>Integer</DataType>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="3d90e8a4-327b-43a6-a37b-0a57460ac9e1">
+                    <TableID>dbo_Incident</TableID>
+                    <ColumnID>FinalIncidentType_id</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+              <Type>Granularity</Type>
+            </Attribute>
+          </Attributes>
+        </Dimension>
+        <Dimension xsi:type="RegularMeasureGroupDimension" dwd:design-time-name="53a041c7-65e3-4ca8-b531-0ad91f859681">
+          <CubeDimensionID>Initial CAD Event Type</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="f7ae1c22-8a96-492d-ae2f-6bacc83b2cdd">
+              <AttributeID>Id</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="c267f6bc-add6-4529-9418-e157fc755cdb">
+                  <DataType>Integer</DataType>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="e7b7a85c-76e2-46e9-b80a-297e98b0c1e9">
+                    <TableID>dbo_Incident</TableID>
+                    <ColumnID>InitialCADEventType_id</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+              <Type>Granularity</Type>
+            </Attribute>
+          </Attributes>
+        </Dimension>
+        <Dimension xsi:type="RegularMeasureGroupDimension" dwd:design-time-name="d6e98005-0707-4d3e-86d4-d54bc6f14757">
+          <CubeDimensionID>Building Status</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="10768e95-381b-47df-984d-c87aea3abc0e">
+              <AttributeID>Id</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="6b91175c-f2e4-403a-828d-b8ba7554d33c">
+                  <DataType>Integer</DataType>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="e9e05f89-ea20-4a92-a6de-2cc642859d91">
+                    <TableID>dbo_Incident</TableID>
+                    <ColumnID>BuildingStatus_id</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+              <Type>Granularity</Type>
+            </Attribute>
+          </Attributes>
+        </Dimension>
+        <Dimension xsi:type="RegularMeasureGroupDimension" dwd:design-time-name="88c71a12-dbe8-4401-8524-b30a9b4225e6">
+          <CubeDimensionID>Extent Of Fire</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="5db51d38-5781-40e7-875e-75e0f4382dd1">
+              <AttributeID>Id</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="a8560cf6-6430-4a64-a71f-8b0d86f39f70">
+                  <DataType>Integer</DataType>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="f48869bb-8f64-42f6-a87c-c85909303b08">
+                    <TableID>dbo_Incident</TableID>
+                    <ColumnID>ExtentOfFire_id</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+              <Type>Granularity</Type>
+            </Attribute>
+          </Attributes>
+        </Dimension>
+        <Dimension xsi:type="RegularMeasureGroupDimension" dwd:design-time-name="0f5ac1c3-c753-4488-80c7-26a1826ac8c7">
+          <CubeDimensionID>Area Of Origin</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="b0da966d-37b6-4452-8aed-95fad7e65237">
+              <AttributeID>Id</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="392820ca-0e81-4222-9808-9e4fc3a547d7">
+                  <DataType>Integer</DataType>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="8c4dc0b5-c4ee-482c-8d0e-12663fe19b3a">
+                    <TableID>dbo_Incident</TableID>
+                    <ColumnID>Area_of_origin_id</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+              <Type>Granularity</Type>
+            </Attribute>
+          </Attributes>
+        </Dimension>
+      </Dimensions>
+      <Partitions />
+    </MeasureGroup>
+  </MeasureGroups>
+  <Source dwd:design-time-name="318f7f25-d9db-4221-bb2e-8b5d1b337b61">
+    <DataSourceViewID>s21126DSV</DataSourceViewID>
+  </Source>
+</Cube>
